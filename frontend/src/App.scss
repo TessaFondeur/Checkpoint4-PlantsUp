@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+
+.app-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("./assets/backgroundplant.png");
+  background-size: cover;
+  font-family: "Coming Soon", cursive;
+}
