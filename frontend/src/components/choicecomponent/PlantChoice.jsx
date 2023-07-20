@@ -18,7 +18,7 @@ export default function PlantChoice() {
   return (
     <div className="container-global-plants">
       <div className="title-choose-plants">
-        <h1>Choisis ta plante !</h1>
+        <h1>Bonjour ... ! Choisis ta plante ~</h1>
       </div>
       <div className="container-plants">
         {data.map(

@@ -17,6 +17,7 @@ export default function Login() {
       [event.target.name]: event.target.value,
     }));
   };
+  // const [createdUserId, setCreatedUserId] = useState(null);
 
   const navigate = useNavigate();
 
@@ -24,6 +25,8 @@ export default function Login() {
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/user`, loginData)
       .then(() => {
+        // const userId = response.data.id;
+        // setCreatedUserId(userId);
         navigate("/chooseplant");
       })
       .catch((err) => {
