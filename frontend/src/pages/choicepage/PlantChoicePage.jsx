@@ -1,3 +1,10 @@
+import ImageButton from "../../components/buttonimage/ImageButton";
+import "./PlantChoicePage.scss";
+
 export default function PlantChoicePage() {
-  return <h1>Choisis ta plante !</h1>;
+  return (
+    <div className="plant-choice-page">
+      <ImageButton />
+    </div>
+  );
 }
