@@ -1,9 +1,10 @@
 import React from "react";
 import Modal from "react-modal";
+import PropTypes from "prop-types";
 import { PiPlantFill } from "react-icons/pi";
 import "./ImageButton.scss";
 
-export default function ImageButton() {
+export default function ImageButton({ image, name }) {
   const [openModal, setOpenModal] = React.useState(false);
 
   const handleModalOpen = () => {
@@ -18,12 +19,8 @@ export default function ImageButton() {
     <div className="container-plant-choice">
       <div className="card-button">
         <button className="btn-image" type="button" onClick={handleModalOpen}>
-          <img
-            className="image-plant"
-            src="./src/assets/miplante3-removebg.png"
-            alt="Plante mignonne"
-          />
-          <h3 className="title-plant-choice">Aspidistra</h3>
+          <img className="image-plant" src={image} alt="Plante mignonne" />
+          <h3 className="title-plant-choice">{name}</h3>
         </button>
       </div>
       <Modal
@@ -56,3 +53,8 @@ export default function ImageButton() {
     </div>
   );
 }
+
+ImageButton.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
