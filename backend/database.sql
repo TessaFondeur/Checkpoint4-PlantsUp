@@ -37,7 +37,7 @@ VALUES
 
 INSERT INTO plant (firstname_plant, family_plant, description, add_date, plant_water, user_id)
 VALUES
-("Nyx", "Spathiphyllum (Fleur de lune)", "Ce sont souvent des fleurs dites sensuelles, au parfum naturellement entêtant, enveloppant et charnel. Elles sont souvent dites miellées, épicées ou fruitées.", NOW(), NOW(), 1),
+("Nyx", "Spathiphyllum", "Ce sont souvent des fleurs dites sensuelles, au parfum naturellement entêtant, enveloppant et charnel. Elles sont souvent dites miellées, épicées ou fruitées.", NOW(), NOW(), 1),
 ("Andréa", "Aspidistra", "L'Aspidistra est une plante vivace rhizomateuse à feuillage vert foncé, persistant luisant, dressé et lancéolé. Les feuilles atteignent jusqu'à 60 cm hauteur tandis que la plante s'étale sur environ 50 cm de largeur. Les fleurs minuscules, de couleur pourpre, éclosent au ras du sol.", NOW(), NOW(), 1),
 ("Bob", "Aspidistra", "L'Aspidistra est une plante vivace rhizomateuse à feuillage vert foncé, persistant luisant, dressé et lancéolé. Les feuilles atteignent jusqu'à 60 cm hauteur tandis que la plante s'étale sur environ 50 cm de largeur. Les fleurs minuscules, de couleur pourpre, éclosent au ras du sol.", NOW(), NOW(), 2);
 
