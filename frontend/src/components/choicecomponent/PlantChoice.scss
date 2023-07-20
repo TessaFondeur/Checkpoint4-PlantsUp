@@ -1,0 +1,18 @@
+.container-global-plants {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15%;
+
+  .title-choose-plants {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 3rem;
+  }
+
+  .container-plants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45vw;
+  }
+}
