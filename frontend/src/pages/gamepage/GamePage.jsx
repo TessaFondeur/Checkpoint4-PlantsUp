@@ -1,3 +1,9 @@
+import CardPlant from "../../components/plantcard/CardPlant";
+
 export default function GamePage() {
-  return <h1>C'est le moment de jouer !</h1>;
+  return (
+    <div className="card-plant-page">
+      <CardPlant />
+    </div>
+  );
 }
