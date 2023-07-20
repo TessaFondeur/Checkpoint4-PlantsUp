@@ -1,0 +1,23 @@
+.container-card-plant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+
+  .header-card {
+    h1 {
+      color: #286650;
+      text-align: center;
+    }
+  }
+
+  .picture-card {
+    display: flex;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .information-card-plant {
+    text-align: center;
+  }
+}
