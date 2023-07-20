@@ -5,7 +5,7 @@ USE `checkpoint4Plantsup_db`;
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `firstname` VARCHAR(100) NOT NULL,
   `alias` VARCHAR(100) NOT NULL,
   `creation_date` DATETIME DEFAULT NOW() 
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- ----------------------------------------------------
 DROP TABLE IF EXISTS `plant`;
 CREATE TABLE IF NOT EXISTS `plant` (
-  `ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `firstname_plant` VARCHAR(100) NOT NULL,
   `family_plant` VARCHAR(100) NOT NULL,
   `description` VARCHAR(550) NULL,
