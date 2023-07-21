@@ -17,7 +17,7 @@ DROP TABLE IF EXISTS `plant`;
 CREATE TABLE IF NOT EXISTS `plant` (
   `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `firstname_plant` VARCHAR(100) NOT NULL,
-  `family_plant` VARCHAR(100) NOT NULL,
+  `family_plant` VARCHAR(100) NULL,
   `description` VARCHAR(550) NULL,
   `add_date` DATETIME DEFAULT NOW(),
   `plant_water` DATETIME DEFAULT NOW(),

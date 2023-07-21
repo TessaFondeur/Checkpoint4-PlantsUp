@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import PropTypes from "prop-types";
 import { PiPlantFill } from "react-icons/pi";
 import "./ImageButton.scss";
@@ -13,6 +15,31 @@ export default function ImageButton({ image, name }) {
 
   const handleModalClose = () => {
     setOpenModal(false);
+  };
+
+  const navigateGame = useNavigate();
+
+  const [namePlantData, setNamePlantData] = useState({
+    firstname_plant: "",
+  });
+
+  const handleChangePlantData = (event) => {
+    setNamePlantData((previousData1) => ({
+      ...previousData1,
+      [event.target.name]: event.target.value,
+    }));
+  };
+
+  const handleSubmitPlantName = (event) => {
+    event.preventDefault();
+    axios
+      .post(`${import.meta.env.VITE_BACKEND_URL}/plant`, namePlantData)
+      .then(() => {
+        navigateGame("/homegame");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
 
   return (
@@ -42,9 +69,16 @@ export default function ImageButton({ image, name }) {
                 id="nameplant"
                 type="text"
                 placeholder="ex : Mimi la Plante ..."
+                name="firstname_plant"
+                value={namePlantData.firstname_plant}
+                onChange={handleChangePlantData}
               />
             </div>
-            <button className="btn-submit-choice" type="submit">
+            <button
+              className="btn-submit-choice"
+              type="submit"
+              onClick={handleSubmitPlantName}
+            >
               GO !
             </button>
           </form>
